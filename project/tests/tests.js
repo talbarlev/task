@@ -4,6 +4,7 @@ import HomePage from "../pages/home-page";
 import IncompliteTransactionPage from "../pages/incomplite-transaction-page";
 import RandomGenerator from "../random-genrator";
 
+
 const randomGenerator = new RandomGenerator();
 
 describe(('Fun - with testing'), async () => {
@@ -27,7 +28,15 @@ describe(('Fun - with testing'), async () => {
 
     });
 
-    it('', async () => {
-
+    it('API calls', async () => {
+     // add Login API - with the relvant token verify those api (only if login success) + money in account
+     // POST - deposit (1. verify 201, verify using GET account the amount before and after,2. verify response is similer to ui)
+     // POST - withdraw  (1. verify 201, verify using GET account the amount before and after,2. verify response is similer to ui)
+     // GET - accounts (1. verify 200, 2.response is smiller to ui)
+     // Make any GET call with no token of login verify 401
+     // Make a POST deposit call with no money in account - verify 400 with the relvant error message
+     // make a POST call, with wrong data variable verify error 400 with the relavnt error message (no 500 of internal server error)
+     // GET - account + GET accounts, and verify the data of account is identical as in the array
+     
     });
 });
